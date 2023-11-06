@@ -1,11 +1,10 @@
 import json
 import time
-from pprint import pprint
 
 import attr
 import requests
 
-from src.general_utils.file_utils import convert_to_base64
+from file_utils import convert_to_base64
 
 
 @attr.s(auto_attribs=True)

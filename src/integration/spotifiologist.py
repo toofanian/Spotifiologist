@@ -11,7 +11,7 @@ from src.spotify_utils.spotify_interface import ISpotify
 class Spotifiologist:
     _spotify: ISpotify
     _database: IFirestoreDb
-    _logger = logging.getLogger(__name__)
+    _logger: logging.Logger = logging.getLogger(__name__)
 
     @classmethod
     def from_interfaces(
